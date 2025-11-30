@@ -1,769 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lebenslauf Benjamin Franz</title>
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5, minimal-ui"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.0/css/OverlayScrollbars.min.css"
-      rel="stylesheet"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.0/js/OverlayScrollbars.min.js"
-    ></script>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lebenslauf Benjamin Franz</title>
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.0/css/OverlayScrollbars.min.css"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.10.0/js/OverlayScrollbars.min.js"
+        ></script>
 
-    <style>
-      /* os-theme-block-dark */
-      .os-theme-block-dark > .os-scrollbar {
-        padding: 0;
-      }
-      .os-theme-block-dark > .os-scrollbar-horizontal {
-        display: none;
-      }
-      .os-theme-block-dark > .os-scrollbar-vertical {
-        bottom: 16px;
-        width: 16px;
-        height: 48%;
-      }
-      .os-theme-block-dark > .os-scrollbar-vertical,
-      .os-theme-block-dark.os-host-scrollbar-horizontal-hidden
-        > .os-scrollbar-vertical {
-        top: 26%;
-        right: 14px;
-      }
-      .os-theme-block-dark > .os-scrollbar-corner {
-        height: 16px;
-        width: 16px;
-        background-color: transparent;
-      }
-      .os-theme-block-dark > .os-scrollbar > .os-scrollbar-track {
-        background: transparent;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-horizontal
-        > .os-scrollbar-track:before {
-        display: none;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-vertical
-        > .os-scrollbar-track:before {
-        content: "";
-        display: block;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.4);
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-vertical
-        > .os-scrollbar-track:before {
-        top: 5px;
-        bottom: 5px;
-        width: 4px;
-        left: 50%;
-        margin-left: -2px;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-vertical:hover
-        > .os-scrollbar-track:before,
-      .os-theme-block-dark
-        > .os-scrollbar-vertical.active
-        > .os-scrollbar-track:before {
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        left: 0;
-        margin-left: 0;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle {
-        background: transparent;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-vertical
-        > .os-scrollbar-track
-        > .os-scrollbar-handle {
-        min-height: 157px;
-        max-height: 217px;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        bottom: 3px;
-        left: 3px;
-        right: 3px;
-        background: #6e6e6e;
-      }
-      .os-theme-block-dark.os-host-scrolling
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle:before {
-        background: #454545;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle:hover:before,
-      .os-theme-block-dark
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle.active:before {
-        background: #002f6c;
-      }
-      .os-theme-block-dark
-        > .os-scrollbar-vertical
-        > .os-scrollbar-track
-        > .os-scrollbar-handle {
-        width: 100%;
-        min-height: 16px;
-      }
-      .os-theme-block-dark.os-host-transition
-        > .os-scrollbar
-        > .os-scrollbar-track
-        > .os-scrollbar-handle:before {
-        transition: background 0.3s;
-      }
-      .os-theme-block-dark.os-host-transition
-        > .os-scrollbar
-        > .os-scrollbar-track:before {
-        transition: margin 0.3s, height 0.3s, width 0.3s, top 0.3s, right 0.3s,
-          bottom 0.3s, left 0.3s;
-      }
-    </style>
+        <link href="./style.css" rel="stylesheet" />
 
-    <style>
-      /* Material Button */
-      .btn-outline {
-        position: relative;
-        display: inline-block;
-        box-sizing: border-box;
-        border: solid 1px;
-        border-color: white;
-        border-radius: 4px;
-        padding: 0 16px;
-        line-height: 32px;
-        vertical-align: middle;
-        text-align: center;
-        text-overflow: ellipsis;
-        text-transform: uppercase;
-        color: white;
-        background-color: transparent;
-        font-family: "Segoe UI", Verdana, Geneva, "sans-serif";
-        font-weight: 500;
-        font-size: 15px;
-        overflow: hidden;
-        outline: none;
-        cursor: pointer;
-      }
+        <style></style>
+    </head>
+    <body>
+        <nav class="print-hide">
+            <span id="logo">Benjamin Franz CV / Resume</span>
+            <button class="btn-outline" onclick="print()">Print</button>
+        </nav>
 
-      .btn-outline::-moz-focus-inner {
-        border: none;
-      }
+        <div id="center">
+            <div id="scale-container">
+                <div id="page">
+                    <div id="left-bar">
+                        <h1>Benjamin Franz</h1>
 
-      /* Overlay */
-      .btn-outline::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: white;
-        opacity: 0;
-        transition: opacity 0.2s;
-      }
+                        <div class="row">
+                            <img src="./code.svg" aria-hidden="true" />
 
-      /* Ripple */
-      .btn-outline::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        border-radius: 50%;
-        padding: 50%;
-        width: 32px;
-        height: 32px;
-        background: white;
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1);
-        transition: opacity 1s, transform 0.5s;
-      }
+                            <div>
+                                <b>Programming Languages:</b> <br />
+                                - JavaScript / TypeScript <br />
+                                - Python <br />
+                                - HTML & CSS <br />
+                                - PHP <br />
+                                - SQL
+                            </div>
+                        </div>
 
-      .btn-outline:hover::after {
-        background: black;
-      }
+                        <div class="row">
+                            <img src="./tools.svg" aria-hidden="true" />
 
-      /* Hover, Focus */
-      .btn-outline:hover {
-        background: white;
-        color: black;
-      }
+                            <div>
+                                <b>Frameworks & Tools:</b> <br />
+                                - Node.js <br />
+                                - Bun.sh <br />
+                                - React <br />
+                                - Vue <br />
+                                - Web Components <br />
+                                - Vite <br />
+                                - Material UI <br />
+                                - Laravel <br />
+                                - Git <br />
+                                - Bitbucket <br />
+                                - Jira
+                            </div>
+                        </div>
 
-      .btn-outline:hover::before {
-        opacity: 0.04;
-      }
+                        <div class="row">
+                            <img src="./language.svg" aria-hidden="true" />
 
-      .btn-outline:focus::before {
-        opacity: 0.15;
-      }
+                            <div>
+                                <b>Languages:</b> <br />
+                                - German (Nativ) <br />
+                                - English (Fluent)
+                            </div>
+                        </div>
 
-      .btn-outline:hover:focus::before {
-        opacity: 0.2;
-      }
+                        <div class="row">
+                            <img src="./mail.svg" aria-hidden="true" />
 
-      /* Active */
-      .btn-outline:active::after {
-        opacity: 0.2;
-        transform: translate(-50%, -50%) scale(0);
-        transition: transform 0s;
-      }
+                            <div>
+                                <b>Mail:</b> <br />
+                                <a href="mailto:benjamin.franz@pm.me">benjamin.franz@pm.me</a>
+                            </div>
+                        </div>
 
-      /* Disabled */
-      .btn-outline:disabled {
-        color: rgba(0, 0, 0, 0.38);
-        background: transparent;
-        cursor: initial;
-      }
+                        <div class="row">
+                            <img src="./phone.svg" aria-hidden="true" />
 
-      .btn-outline:disabled::before {
-        opacity: 0;
-      }
+                            <div>
+                                <b>Phone:</b> <br />
+                                +49 171 4883330
+                            </div>
+                        </div>
 
-      .btn-outline:disabled::after {
-        opacity: 0;
-      }
-    </style>
+                        <div class="row">
+                            <img src="./world-www.svg" aria-hidden="true"/>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: "Roboto Slab", serif;
-      }
+                            <div>
+                                <b>Website:</b> <br />
+                                <a href="https://bennyalex.github.io/"
+                                    >https://bennyalex.github.io/</a
+                                >
+                            </div>
+                        </div>
 
-      body,
-      html {
-        padding: 0;
-        margin: 0;
-        background: #f8f8f8;
-        height: 100%;
-        width: 100%;
-      }
+                        <div class="row">
+                            <img src="./map-pin.svg" aria-hidden="true" />
 
-      body {
-        background-image: url("https://raw.githubusercontent.com/BennyAlex/lebenslauf/master/background.png");
-        background-repeat: repeat;
-        background-position: bottom;
-      }
+                            <div>
+                                <b>Address:</b> <br />
+                                Wagnergäßchen 10 <br />
+                                97204 Höchberg <br />
+                                Germany
+                            </div>
+                        </div>
 
-      #page {
-        background: white;
-        background-image: url("https://raw.githubusercontent.com/BennyAlex/lebenslauf/master/header.png");
-        width: 21cm;
-        height: 29.7cm;
-        margin: 0;
-        border-radius: 5px;
-        padding: 0.6cm;
-        background-position: -1px -1px;
-        background-repeat: no-repeat;
-        background-size: 21.05cm;
-        position: relative;
-        box-shadow: 0 0 0 1px #666, 0px 0px 6px 4px rgba(0, 0, 0, 0.25),
-          0px 0px 13px 13px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: flex-end;
-      }
+                        <div class="row">
+                            <img src="./cake.svg" aria-hidden="true" />
 
-      #page,
-      #page div {
-        font-size: 11pt;
-      }
+                            <div>
+                                <b>Date of Birth:</b> <br />
+                                06.02.1998
+                            </div>
+                        </div>
+                    </div>
 
-      nav {
-        top: 0;
-        left: 0;
-        background: #002f6c;
-        position: fixed;
-        width: 100%;
-        z-index: 99;
-        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25),
-          0 3px 6px 2px rgba(0, 0, 0, 0.15), 0 4px 10px 2px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 28px;
-        height: 75px;
-      }
+                    <div id="right-bar">
+                        <div class="experience">
+                            <h2>Summary</h2>
 
-      nav #logo {
-        font-size: 28px;
-        color: white;
-        letter-spacing: 2px;
-        padding-right: 16px;
-      }
+                            Passionate and detail-oriented software developer with strong expertise
+                            in modern web technologies such as React, Vue, and Node.js. Experienced
+                            in creating accessible, high-performance applications and automating
+                            workflows using APIs and custom tools. Skilled at combining front-end
+                            precision with back-end logic to deliver clean, scalable solutions.
+                        </div>
 
-      #scale-container {
-        transform-origin: top;
-      }
+                        <div class="experience">
+                            <h2>Work Experience</h2>
 
-      #center {
-        display: flex;
-        justify-content: center;
-        align-content: flex-start;
-        align-items: flex-start;
-        padding: 40px;
-        margin-top: 75px; /* same as navbar height */
-      }
+                            <div class="experience-header">
+                                <div>Webinclusion GmbH</div>
+                                <div>10/2022 - 2025</div>
+                            </div>
+                            As the lead responsible for the
+                            <a href="https://dashboard.eye-able.com/demo/">Eye-Able Dashboard</a>, I
+                            developed a comprehensive and interactive single-page-application using
+                            React and Material UI. The project features detailed graphs and tables,
+                            a PDF viewer showing accessibility errors, and a function to display
+                            screenshots with marked bounding boxes. <br />
+                            Additionally, I implemented a broken-link checker and created a web
+                            component to simplify input text into easier language using the OpenAI
+                            API, aiding in removing barriers in the web. Furthermore, I created an
+                            automated Lighthouse crawler and a corresponding results page, to giving
+                            customers an overview of their website's performance and SEO.
+                        </div>
 
-      h2 {
-        padding: 0;
-        margin: 15px 0;
-        position: relative;
-        font-size: 14pt;
-      }
+                        <div class="experience">
+                            <div class="experience-header">
+                                <div>Faaren GmbH</div>
+                                <div>03/2020 - 09/2020</div>
+                            </div>
+                            I developed the front- and backend for the
+                            <a href="https://faaren.com/katalog/">vehicle catalog</a>, using Vue.js,
+                            Vuetify and Laravel.
+                        </div>
 
-      h2::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        width: calc(100% + 2px);
-        height: 0;
-        bottom: 0;
-        left: -1px;
-        border-bottom: 1px solid black;
-      }
+                        <div class="experience">
+                            <div class="experience-header">
+                                <div>Self-Employed</div>
+                                <div>08/2018 - present</div>
+                            </div>
+                            I work as a freelance developer, creating websites for small businesses
+                            and private persons. This often includes working with content management
+                            systems like WordPress, but I also create fully custom websites using
+                            PHP and JavaScript. Occasionally, I repair computers and other
+                            electronic devices as part of my technical freelance work.
+                        </div>
 
-      #left-bar {
-        background: #1a4473;
-        width: 8cm;
-        color: white;
-      }
-
-      #left-bar,
-      #right-bar {
-        display: inline-block;
-        padding: 15px;
-        height: 23.27cm;
-        margin-bottom: -0.6cm;
-      }
-
-      #right-bar h2 {
-        margin-bottom: 0;
-      }
-
-      #left-bar h2:first-of-type,
-      #right-bar h2:first-of-type {
-        margin-top: 0;
-      }
-
-      #right-bar {
-        width: 11.8cm;
-      }
-
-      #right-bar .row div:first-of-type {
-        min-width: 172px;
-        margin-right: 12px;
-      }
-
-      #left-bar a {
-        color: white;
-        font-size: 9.1pt;
-      }
-
-      #left-bar h2::before {
-        border-color: white;
-      }
-
-      .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 15px 0;
-      }
-
-      #left-bar svg {
-        width: 26px;
-        height: 26px;
-        min-width: 26px;
-        min-height: 26px;
-        margin-right: 0.5cm;
-      }
-
-      #name {
-        position: absolute;
-        top: 60.5px;
-        width: 19.8cm;
-        text-align: center;
-        color: white;
-        font-weight: 700;
-        font-size: 20.25pt !important;
-      }
-
-      @media only screen and (max-width: 820px) {
-        nav {
-          height: 52px;
-          padding: 0 20px;
-        }
-
-        nav #logo {
-          font-size: 19px;
-        }
-
-        nav .btn-outline {
-          font-size: 12px;
-          padding: 0 13px;
-          line-height: 26px;
-        }
-
-        #center {
-          padding: 32px;
-          margin-top: 52px; /* same as navbar height */
-        }
-
-        .os-theme-block-dark > .os-scrollbar-vertical,
-        .os-theme-block-dark.os-host-scrollbar-horizontal-hidden
-          > .os-scrollbar-vertical {
-          right: 7px;
-        }
-      }
-
-      @media only screen and (max-width: 500px) {
-        nav {
-          height: 44px;
-          padding: 0 15px;
-        }
-
-        nav #logo {
-          font-size: 15px;
-          letter-spacing: 1px;
-        }
-
-        nav .btn-outline {
-          font-size: 10px;
-          padding: 0 11px;
-          line-height: 22px;
-        }
-
-        .hide-sm {
-          display: none;
-        }
-
-        .show-sm {
-          display: block;
-        }
-
-        #center {
-          padding: 25px;
-          margin-top: 44px; /* same as navbar height */
-        }
-
-        .os-theme-block-dark > .os-scrollbar-vertical,
-        .os-theme-block-dark.os-host-scrollbar-horizontal-hidden
-          > .os-scrollbar-vertical {
-          right: 3px;
-        }
-      }
-
-      @page {
-        size: A4;
-        margin: 0;
-        padding: 0;
-        marks: none ;
-        bleed: 0;
-      }
-
-      @media print {
-        .print-hide,
-        .os-scrollbar,
-        .os-scrollbar-horizontal,
-        .os-scrollbar-vertical,
-        .os-scrollbar-corner,
-        .os-resize-observer-host {
-          display: none !important;
-        }
-
-        #page,
-        * {
-          -webkit-print-color-adjust: exact !important;
-          -moz-print-color-adjust: exact !important;
-          print-color-adjust: exact !important;
-          color-adjust: exact !important;
-        }
-
-        html,
-        body {
-          background: white;
-        }
-
-        #center,
-        #scale-container {
-          padding: 0 !important;
-        }
-
-        #page,
-        #center,
-        #scale-container {
-          margin: 0 !important;
-          width: 21cm !important;
-          height: 29.7cm !important;
-        }
-
-        #scale-container {
-          transform: scale(1) !important;
-        }
-
-        #page {
-          border-radius: 0 !important;
-          box-shadow: none  !important;
-          page-break-after: auto !important;
-        }
-
-        a {
-          text-decoration: none !important;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="print-hide">
-      <span id="logo">Lebenslauf Benjamin Franz</span>
-      <button class="btn-outline" onclick="print()">
-        Drucken
-      </button>
-    </nav>
-
-    <div id="center">
-      <div id="scale-container">
-        <div id="page">
-          <div id="name">
-            Benjamin Franz
-          </div>
-
-          <div id="left-bar">
-            <h2>Info</h2>
-
-            <div class="row">
-              <svg viewBox="0 0 26 26">
-                <path
-                  fill="#ffffff"
-                  d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
-                />
-              </svg>
-
-              <div>
-                Adresse: <br />
-                Wagnergäßchen 10 <br />
-                97204 Höchberg
-              </div>
+                        <div class="experience">
+                            <div class="experience-header">
+                                <div>Main-Post GmbH</div>
+                                <div>09/2015 - 07/2018</div>
+                            </div>
+                            I completed a three-year certified, state-recognized apprenticeship as a
+                            Computer Science Expert in Software Development. Gained broad experience
+                            in UI design, backend programming, and database management. I worked on
+                            a variety of projects using Ember.js, Vue.js, PHP, Python and MySQL and
+                            PostgreSQL databases.
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="row">
-              <svg viewBox="0 0 26 26">
-                <path
-                  fill="#ffffff"
-                  d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
-                />
-              </svg>
-
-              <div>
-                Email: <br />
-                <a href="mailto:benjamin.franz@proton.me"
-                  >benjamin.alexander.franz@gmail.com</a
-                >
-              </div>
-            </div>
-
-            <div class="row">
-              <svg viewBox="0 0 26 26">
-                <path
-                  fill="#ffffff"
-                  d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z"
-                />
-              </svg>
-
-              <div>
-                Telefon: <br />
-                01714883330
-              </div>
-            </div>
-            
-            <div class="row">
-              <svg viewBox="0 0 26 26">
-                <path
-                  fill="#ffffff"
-                  d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
-                />
-              </svg>
-
-              <div>
-                Homepage: <br />
-                <a href="https://bennyalex.github.io/Homepage">https://bennyalex.github.io/Homepage</a>
-              </div>
-            </div>           
-
-            <div class="row">
-              <svg viewBox="0 0 26 26">
-                <path
-                  fill="#ffffff"
-                  d="M12,6C13.11,6 14,5.1 14,4C14,3.62 13.9,3.27 13.71,2.97L12,0L10.29,2.97C10.1,3.27 10,3.62 10,4A2,2 0 0,0 12,6M16.6,16L15.53,14.92L14.45,16C13.15,17.29 10.87,17.3 9.56,16L8.5,14.92L7.4,16C6.75,16.64 5.88,17 4.96,17C4.23,17 3.56,16.77 3,16.39V21A1,1 0 0,0 4,22H20A1,1 0 0,0 21,21V16.39C20.44,16.77 19.77,17 19.04,17C18.12,17 17.25,16.64 16.6,16M18,9H13V7H11V9H6A3,3 0 0,0 3,12V13.54C3,14.62 3.88,15.5 4.96,15.5C5.5,15.5 6,15.3 6.34,14.93L8.5,12.8L10.61,14.93C11.35,15.67 12.64,15.67 13.38,14.93L15.5,12.8L17.65,14.93C18,15.3 18.5,15.5 19.03,15.5C20.11,15.5 21,14.62 21,13.54V12A3,3 0 0,0 18,9Z"
-                />
-              </svg>
-
-              <div>
-                Geburtstag: <br />
-                am 06.02.1998 <br />
-                in Aschaffenburg
-              </div>
-            </div>
-          </div>
-
-          <div id="right-bar">
-            <h2>Berufliche Tätigkeiten</h2>
-            <div class="row">
-              <div>
-                seit 10/2022
-              </div>
-              <div>
-                <b>Webinclusion GmbH</b><br />
-                - Implementierung eines Dashboards mit React und Material UI, inklusive Graphen, Tabellen, PDF-Viewer und Screenshots mit Bounding Boxen
-                - Erstellung eine Broken-Link-Checker und einer Web Component zur Überprüfung von Farb- und Textkontrasten
-              </div>
-            </div>
-            
-            
-            <div class="row">
-              <div>
-                seit 05/2021
-              </div>
-              <div>
-                <b>Selbstständigkeit</b><br />
-                - Reperatur von Spielkonsolen, Senioren-Unterstützung bei Computer- & Internetfragen, Betreuung von Hompages und Onlineshops
-              </div>
-            </div>
-            
-            <div class="row">
-              <div>
-                05/2020 bis 11/2020
-              </div>
-              <div>
-                <b>Faaren GmbH:</b><br />
-                - Entwickler für Frontend (Vue.js) und Backend (PHP + Laravel)
-              </div>
-            </div>
-            
-            <div class="row">
-              <div>
-                09/2015 bis 07/2018
-              </div>
-              <div>
-                <b>Main-Post GmbH:</b><br />
-                - Abgeschlossene Ausbildung als Fachinformatiker für
-                Anwendungsentwicklung (Note: Gut)<br />
-                - Schwerpunkte: Fullstack Webentwicklung (Datenbank, Backend,
-                Frontend und UI)
-              </div>
-            </div>
-
-            <h2>Kenntnisse</h2>
-            <div class="row">
-              <div>
-                Sprachkenntnisse
-              </div>
-              <div>
-                Deutsch – Muttersprache,<br />
-                Englisch – gute Kenntnisse in Wort und Schrift (PET B1)
-              </div>
-            </div>
-
-            <div class="row">
-              <div>
-                Programmiersprachen
-              </div>
-              <div>
-                JavaScript, Python, HTML & CSS, PHP, SQL
-              </div>
-            </div>
-
-            <div class="row">
-              <div>
-                Frameworks & Tools
-              </div>
-              <div>
-                React, Material UI (MUI), Web Components, Git, Ember.js, Flask, Node.js, Vuetify, Vue.js, Webpack, Laravel, Photoshop, Gimp
-              </div>
-            </div>
-
-            <h2>Interessen</h2>
-            <div class="row">
-              Fahrrad fahren, Gesellschaftsspiele, Finanzen & Kryptowährungen
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <script>
-      function adjustZoomLevel() {
-        var documentWidth =
-          document.body.clientWidth ||
-          document.documentElement.clientWidth ||
-          window.innerWidth;
+        <script>
+            function adjustZoomLevel() {
+                var documentWidth =
+                    document.body.clientWidth ||
+                    document.documentElement.clientWidth ||
+                    window.innerWidth;
 
-        var center = document.getElementById("center");
+                var center = document.getElementById("center");
 
-        var centerPadding =
-          parseFloat(
-            window.getComputedStyle(center).paddingLeft.replace("px", "")
-          ) * 2;
+                var centerPadding =
+                    parseFloat(window.getComputedStyle(center).paddingLeft.replace("px", "")) * 2;
 
-        var page = document.getElementById("page");
+                var page = document.getElementById("page");
 
-        var pageSize = 794; // 21cm in px
+                var pageSize = 794; // 21cm in px
 
-        var zoomLevel = (documentWidth - centerPadding) / pageSize;
+                var zoomLevel = (documentWidth - centerPadding) / pageSize;
 
-        var container = document.getElementById("scale-container");
+                var container = document.getElementById("scale-container");
 
-        if (zoomLevel >= 1) {
-          // stop zooming when A4 page fits screen and remove fixed height from container
-          center.removeAttribute("style");
-          container.removeAttribute("style");
-        } else {
-          // apply the scale
-          container.style.transform = "scale(" + zoomLevel + ")";
+                if (zoomLevel >= 1) {
+                    // stop zooming when A4 page fits screen and remove fixed height from container
+                    center.removeAttribute("style");
+                    container.removeAttribute("style");
+                } else {
+                    // apply the scale
+                    container.style.transform = "scale(" + zoomLevel + ")";
 
-          // shrink the container to the visible hight of the page
-          container.style.height = page.offsetHeight * zoomLevel + "px";
+                    // shrink the container to the visible hight of the page
+                    container.style.height = page.offsetHeight * zoomLevel + "px";
 
-          container.style.height = center.style.height =
-            page.offsetHeight * zoomLevel + centerPadding + "px";
-        }
-      }
+                    container.style.height = center.style.height =
+                        page.offsetHeight * zoomLevel + centerPadding + "px";
+                }
+            }
 
-      window.onload = function() {
-        OverlayScrollbars(document.body, {
-          className: "os-theme-block-dark"
-        });
+            window.onload = function () {
+                OverlayScrollbars(document.body, {
+                    className: "os-theme-block-dark",
+                });
 
-        adjustZoomLevel();
-        window.addEventListener("resize", adjustZoomLevel);
-      };
-    </script>
-  </body>
+                adjustZoomLevel();
+                window.addEventListener("resize", adjustZoomLevel);
+            };
+        </script>
+    </body>
 </html>
