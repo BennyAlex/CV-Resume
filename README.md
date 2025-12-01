@@ -1,4 +1,4 @@
 # Lebenslauf
-My classic CV written using HTML+CSS
+My classic CV / Resume written using HTML & CSS & JS.
 
-bennyalex.github.io/Lebenslauf/
+bennyalex.github.io/CV-Resume/

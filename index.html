@@ -26,7 +26,7 @@
     <body>
         <nav class="print-hide">
             <span id="logo">Benjamin Franz CV / Resume</span>
-            <button class="btn-outline" onclick="print()">Print</button>
+            <button class="btn-outline" onclick="print()" type="button">Print</button>
         </nav>
 
         <div id="center">
@@ -40,7 +40,7 @@
 
                             <div>
                                 <b>Programming Languages:</b> <br />
-                                - JavaScript / TypeScript <br />
+                                - JavaScript & TypeScript <br />
                                 - Python <br />
                                 - HTML & CSS <br />
                                 - PHP <br />
@@ -49,20 +49,34 @@
                         </div>
 
                         <div class="row">
-                            <img src="./tools.svg" aria-hidden="true" />
+                            <img src="./frameworks.svg" aria-hidden="true" />
 
                             <div>
-                                <b>Frameworks & Tools:</b> <br />
+                                <b>Frameworks:</b> <br />
                                 - Node.js <br />
                                 - Bun.sh <br />
                                 - React <br />
                                 - Vue <br />
                                 - Web Components <br />
                                 - Vite <br />
-                                - Material UI <br />
-                                - Laravel <br />
+                                - MUI <br />
+                                - Vuetify <br />
+                                - Chart.js <br />
+                                - Tanstack Query <br />
+                                - Laravel
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <img src="./tools.svg" aria-hidden="true" />
+
+                            <div>
+                                <b>Tools/Platforms:</b> <br />
                                 - Git <br />
                                 - Bitbucket <br />
+                                - Docker <br />
+                                - Sentry <br />
+                                - Scaleway <br />
                                 - Jira
                             </div>
                         </div>
@@ -96,12 +110,12 @@
                         </div>
 
                         <div class="row">
-                            <img src="./world-www.svg" aria-hidden="true"/>
+                            <img src="./world-www.svg" aria-hidden="true" />
 
                             <div>
                                 <b>Website:</b> <br />
                                 <a href="https://bennyalex.github.io/"
-                                    >https://bennyalex.github.io/</a
+                                    >https://bennyalex.github.io</a
                                 >
                             </div>
                         </div>
@@ -110,10 +124,9 @@
                             <img src="./map-pin.svg" aria-hidden="true" />
 
                             <div>
-                                <b>Address:</b> <br />
-                                Wagnergäßchen 10 <br />
+                                <b>Location:</b> <br />
                                 97204 Höchberg <br />
-                                Germany
+                                Bavaria, Germany
                             </div>
                         </div>
 
@@ -132,10 +145,11 @@
                             <h2>Summary</h2>
 
                             Passionate and detail-oriented software developer with strong expertise
-                            in modern web technologies such as React, Vue, and Node.js. Experienced
-                            in creating accessible, high-performance applications and automating
-                            workflows using APIs and custom tools. Skilled at combining front-end
-                            precision with back-end logic to deliver clean, scalable solutions.
+                            in React, Vue, and Node.js. Experienced in creating accessible,
+                            high-performance applications and automating workflows using
+                            microservices/REST architectures with AI integration. Skilled at
+                            combining front-end precision with back-end logic to deliver clean,
+                            scalable solutions.
                         </div>
 
                         <div class="experience">
@@ -143,19 +157,41 @@
 
                             <div class="experience-header">
                                 <div>Webinclusion GmbH</div>
-                                <div>10/2022 - 2025</div>
+                                <div>10/2022 - 01/2025</div>
                             </div>
-                            As the lead responsible for the
-                            <a href="https://dashboard.eye-able.com/demo/">Eye-Able Dashboard</a>, I
-                            developed a comprehensive and interactive single-page-application using
-                            React and Material UI. The project features detailed graphs and tables,
-                            a PDF viewer showing accessibility errors, and a function to display
-                            screenshots with marked bounding boxes. <br />
-                            Additionally, I implemented a broken-link checker and created a web
-                            component to simplify input text into easier language using the OpenAI
-                            API, aiding in removing barriers in the web. Furthermore, I created an
-                            automated Lighthouse crawler and a corresponding results page, to giving
-                            customers an overview of their website's performance and SEO.
+                            <div>
+                                Lead Full-Stack Developer for the
+                                <a href="https://dashboard.eye-able.com/demo/"
+                                    >Eye-Able Dashboard</a
+                                >
+                            </div>
+                            <ul>
+                                <li>
+                                    Developed a comprehensive SPA using React and MUI;
+                                    re-architected the backend with Bun and TypeScript to decrease
+                                    latency by 80% and accelerate future development.
+                                </li>
+
+                                <li>
+                                    Integrated OpenAI to build a text-simplification web component
+                                    and a accessibility Q&A chatbot
+                                </li>
+
+                                <li>
+                                    Built an automated Lighthouse crawler to generate SEO and
+                                    performance reports and a broken-link checker for customer
+                                    websites.
+                                </li>
+
+                                <li>
+                                    Engineered detailed graphs, a PDF accessibility error viewer,
+                                    and screenshot bounding-box overlays for visual error tracking.
+                                </li>
+
+                                <li>
+                                    Implemented secure user authentication using JWT.
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="experience">
@@ -163,21 +199,31 @@
                                 <div>Faaren GmbH</div>
                                 <div>03/2020 - 09/2020</div>
                             </div>
-                            I developed the front- and backend for the
-                            <a href="https://faaren.com/katalog/">vehicle catalog</a>, using Vue.js,
-                            Vuetify and Laravel.
+                            <ul>
+                                <li>
+                                    Implemented the
+                                    <a href="https://faaren.com/katalog/">vehicle catalog</a> (Vue,
+                                    Vuetify, Laravel) — front- and back-end.
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="experience">
                             <div class="experience-header">
-                                <div>Self-Employed</div>
+                                <div>Freelance Developer & Technician</div>
                                 <div>08/2018 - present</div>
                             </div>
-                            I work as a freelance developer, creating websites for small businesses
-                            and private persons. This often includes working with content management
-                            systems like WordPress, but I also create fully custom websites using
-                            PHP and JavaScript. Occasionally, I repair computers and other
-                            electronic devices as part of my technical freelance work.
+                            <ul>
+                                <li>
+                                    Designed and developed custom websites and online stores or
+                                    managed CMS (like WordPress) for small businesses and private
+                                    clients.
+                                </li>
+                                <li>
+                                    Provided technical support and repair services for computers and
+                                    various electronic devices.
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="experience">
@@ -185,11 +231,23 @@
                                 <div>Main-Post GmbH</div>
                                 <div>09/2015 - 07/2018</div>
                             </div>
-                            I completed a three-year certified, state-recognized apprenticeship as a
-                            Computer Science Expert in Software Development. Gained broad experience
-                            in UI design, backend programming, and database management. I worked on
-                            a variety of projects using Ember.js, Vue.js, PHP, Python and MySQL and
-                            PostgreSQL databases.
+                            <ul>
+                                <li>
+                                    <strong>Certified Apprenticeship (3 Years):</strong> Completed a
+                                    state-recognized, certified apprenticeship as a Computer Science
+                                    Expert in Software Development.
+                                </li>
+                                <li>
+                                    Gained comprehensive
+                                    experience spanning UI design, robust backend programming, and
+                                    relational database management.
+                                </li>
+                                <li>
+                                    Developed and
+                                    deployed diverse projects utilizing various technologies including
+                                    Ember.js and Vue, PHP and Python, MySQL and PostgreSQL.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
