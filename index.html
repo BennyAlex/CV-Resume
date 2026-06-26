@@ -278,7 +278,6 @@
 
                 if (zoomLevel >= 1) {
                     // stop zooming when A4 page fits screen and remove fixed height from container
-                    center.removeAttribute("style");
                     container.removeAttribute("style");
                 } else {
                     // apply the scale
@@ -286,8 +285,6 @@
 
                     // shrink the container to the visible hight of the page
                     container.style.height = page.offsetHeight * zoomLevel + "px";
-
-                    center.style.height = page.offsetHeight * zoomLevel + centerPadding + "px";
                 }
             }
 
